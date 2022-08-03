@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>info</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="user-list"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<div *ngIf="info" >
+    <ion-card>
+    <ion-card-content class="ion-text-center">
+      <img src="{{info.image}}" alt="imagen del personaje">
+      <ion-card-title>
+        {{info.name}}
+      </ion-card-title>
+      <p>{{info.species}}</p>
+      <p>{{info.status}}</p>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+</ion-content>

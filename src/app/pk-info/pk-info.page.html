@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>info</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="pk-list"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<div *ngIf="info" >
+    <ion-card>
+    <ion-card-content class="ion-text-center">
+      <img src="{{info.sprites.front_default}}" alt="imagen del personaje">
+      <ion-card-title>
+        {{info.name}}
+      </ion-card-title>
+      <strong>Altura</strong>
+      <p>{{info.height}}</p>
+      <strong>Tipo</strong>
+      <p>{{info.types[0].type.name}}</p>
+      <strong>Experiencia base</strong>
+      <p>{{info.base_experience}}</p>
+      <strong>Habilidedes</strong>
+      <p>{{info.abilities[0].ability.name}}</p>
+      <img src="{{info.sprites.back_default}}" alt="imagen del personaje">
+    </ion-card-content>
+  </ion-card>
+</div>
+
+</ion-content>

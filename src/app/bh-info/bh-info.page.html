@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>info</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="bh-list"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<div *ngIf="info" >
+    <ion-card>
+    <ion-card-content class="ion-text-center">
+      <ion-card-title>
+        {{info.name}}
+      </ion-card-title>
+      <strong>Altura</strong>
+      <p>{{info.height}}</p>
+      <strong>Color de pelo</strong>
+      <p>{{info.hair_color}}</p>
+      <strong>Color de piel</strong>
+      <p>{{info.skin_color}}</p>
+      <strong>Color de ojos</strong>
+      <p>{{info.eye_color}}</p>
+      <strong>Genero</strong>
+      <p>{{info.gender}}</p>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+</ion-content>
